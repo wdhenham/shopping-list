@@ -9,7 +9,7 @@ module.exports = function(app, bodyParser){
   }, {
     item: "Sample item 2"
   }, {
-    item: "Sample item 3"
+    item: "Sample item test"
   }]
 
   app.get('/', function(req, res) {
