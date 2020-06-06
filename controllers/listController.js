@@ -1,7 +1,7 @@
 const Datastore = require('@google-cloud/datastore');
 const datastore = new Datastore();
 
-module.exports = function(app, bodyParser){
+module.exports = async function(app, bodyParser){
 
   var urlencodedParser = bodyParser.urlencoded({
     extended: true
