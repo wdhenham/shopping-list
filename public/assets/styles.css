@@ -39,7 +39,7 @@ input[type="text"]{
     background:#D8DEE9;
     border: 0;
     float: left;
-    font-size: 20px;
+    font-size: 18px;
     color: #2E3440;
     border-radius: 5px;
     font-family: 'Dosis'
@@ -52,7 +52,7 @@ input[type="number"]{
     border: 0;
     float: left;
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 18px;
     color: #2E3440;
     border-radius: 5px;
     font-family: 'Dosis'
@@ -60,16 +60,17 @@ input[type="number"]{
 
 button{
     padding: 20px;
-    width: 21%;
-    float: right;
+    width: 15%;
+    float: left;
     background: #5E81AC;
     border: 0;
     box-sizing: border-box;
     color: #2E3440;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
-    font-family: 'Dosis'
+    font-family: 'Dosis';
+    margin-left: 5px;
 }
 
 ul{
