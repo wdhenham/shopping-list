@@ -51,7 +51,7 @@ input[type="number"]{
     background:#D8DEE9;
     border: 0;
     float: left;
-    margin-left: 5px;
+    margin-left: 1%;
     font-size: 18px;
     color: #2E3440;
     border-radius: 5px;
@@ -70,7 +70,7 @@ button{
     font-size: 18px;
     border-radius: 5px;
     font-family: 'Dosis';
-    margin-left: 5px;
+    margin-left: 1%;
 }
 
 ul{
