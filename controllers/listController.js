@@ -8,6 +8,8 @@ module.exports = function(app, bodyParser){
     item: "Sample item"
   }, {
     item: "Sample item 2"
+  }, {
+    item: "Sample item 3"
   }]
 
   app.get('/', function(req, res) {
