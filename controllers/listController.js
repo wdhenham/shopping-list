@@ -1,3 +1,6 @@
+const Datastore = require('@google-cloud/datastore');
+const datastore = new Datastore();
+
 module.exports = function(app, bodyParser){
 
   var urlencodedParser = bodyParser.urlencoded({
@@ -5,12 +8,17 @@ module.exports = function(app, bodyParser){
   });
 
   var data = [{
-    item: "Sample item",
+    item: "Click on me to delete me",
     qty: 1
-  }, {
-    item: "Sample item 2",
-    qty: 2
   }]
+
+  await datastore.save({
+    key: datastore.key('shoppingItem'),
+    data: {
+      item: data.item
+      qty: data.qty
+    }
+  })
 
   app.get('/', function(req, res) {
     res.render('shoppingList', {
