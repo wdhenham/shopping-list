@@ -13,6 +13,7 @@ body{
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 #todo-table form:after{
@@ -23,53 +24,72 @@ body{
     background: #ECEFF4;
 }
 
+#title{
+  background: #2E3440;
+  font-family: 'Dosis', sans-serif;
+  color: #8FBCBB;
+  position: relative;
+  width: 95%;
+  margin-left: 40px;
+}
+
 input[type="text"]{
-    width: 70%;
+    width: 65%;
     padding: 20px;
     background:#D8DEE9;
     border: 0;
     float: left;
     font-size: 20px;
-    color: #5E81AC;
+    color: #2E3440;
     border-radius: 5px;
+    font-family: 'Dosis'
+}
+
+input[type="number"]{
+    width: 5%;
+    padding: 20px;
+    background:#D8DEE9;
+    border: 0;
+    float: left;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #2E3440;
+    border-radius: 5px;
+    font-family: 'Dosis'
 }
 
 button{
     padding: 20px;
-    width: 25%;
+    width: 21%;
     float: right;
-    background: #4C566A;
+    background: #5E81AC;
     border: 0;
     box-sizing: border-box;
-    color: #D08770;
+    color: #2E3440;
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
+    font-family: 'Dosis'
 }
 
 ul{
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 5px;
 }
 
 li{
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    font-family: arial;
+    font-family: 'Dosis';
     font-size: 20px;
     cursor: pointer;
     letter-spacing: 1px;
+    border-radius: 5px;
 }
 
 li:hover{
     text-decoration: line-through;
-    background: rgba(0,0,0,0.2);
-}
-
-h1{
-    background: url(/assets/logo.png) no-repeat center;
-    margin-bottom: 0;
-    text-indent: -10000px;
+    background: #4C566A;
 }

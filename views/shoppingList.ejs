@@ -2,20 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src='/assets/list-handler.js'></script>
     <link href="/assets/styles.css" rel="stylesheet" type="text/css" / />
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Noto+Sans&display=swap" rel="stylesheet">
     <title>Shopping List</title>
   </head>
-  <h1>My Shopping List</h1>
   <body>
+    <div id="title">
+      <h1>My Shopping List</h1>
+    </div>
     <div id="todo-table">
       <form>
-        <input type="text" name="item" placeholder="Add new item..." required/>
+        <input id="item" type="text" name="item" placeholder="Add item..." required/>
+        <input id="qty" type="number" name="qty" placeholder="Qty" required/>
         <button type="submit">Add Item</button>
       </form>
       <ul>
         <% for(var i=0; i < items.length; i++){ %>
-          <li><%= items[i].item %></li>
+          <li><%= items[i].qty%> x <%= items[i].item %></li>
         <%}%>
       </ul>
       </div>
