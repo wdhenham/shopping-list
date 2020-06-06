@@ -61,7 +61,7 @@ input[type="number"]{
 button{
     padding: 20px;
     width: 15%;
-    float: left;
+    float: center;
     background: #5E81AC;
     border: 0;
     box-sizing: border-box;
