@@ -13,7 +13,6 @@ $(document).on('ready', function(){
         data: formData,
         success: function(data){
           //do something with the data via front-end framework
-          formData.qty = Number(formData.qty)
           location.reload();
         }
       });
